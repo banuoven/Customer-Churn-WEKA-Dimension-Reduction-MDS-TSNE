@@ -20,7 +20,8 @@ techniques were deployed on the Customer Churn dataset:
 The MDS Stress statistic was computed across dimensions ranging from 1 to 5 to evaluate how
 well the lower-dimensional space represents the original high-dimensional distances.
 
-![MDS Stress vs. Dimensions](images/01_mds_stress_vs_dimensions.png)
+<img width="1208" height="614" alt="01_mds_stress_vs_dimensions" src="https://github.com/user-attachments/assets/9e4e12b2-04bd-4d81-983a-de83943cbf1e" />
+
 
 The Stress value decreases monotonically as dimensionality increases. In a 2D projection, the
 stress stabilizes at a moderate threshold — compressing the 13-dimensional customer behavior
@@ -32,7 +33,8 @@ interpretable.
 Four configurations were tested, crossing algorithm type (Metric vs. Non-Metric) with
 preprocessing (with vs. without standardization).
 
-![MDS 4-Panel Comparison](images/02_mds_4panel_comparison.png)
+<img width="1205" height="600" alt="02_mds_4panel_comparison" src="https://github.com/user-attachments/assets/4da23586-e3ac-4908-bd2e-6457f527a908" />
+
 
 - **Impact of standardization:** without standardization, features with massive numerical
   magnitudes (e.g. `Seconds of Use`) dominate the Euclidean distance calculations, causing
@@ -46,7 +48,8 @@ preprocessing (with vs. without standardization).
 
 ## 3. t-SNE Analysis and the Impact of Standardization
 
-![t-SNE Standardization Comparison](images/03_tsne_standardization_comparison.png)
+![t-SNE Standardization Comparison]<img width="1210" height="580" alt="03_tsne_standardization_comparison" src="https://github.com/user-attachments/assets/1d709017-6adc-4b65-829b-37355d917ddd" />
+
 
 - **Without standardization:** scale dominance by unscaled features prevents t-SNE from
   computing meaningful conditional probabilities, producing a chaotic map with no logical
